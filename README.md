@@ -1,10 +1,13 @@
 # 📘 Calculator
 
 ## 📌 Description
-You can calculate numbers easily, like a real calculator and this's really helpful for students, accountants and others.
+A basic web calculator, it allows users to perform simple arithmetic operations with a clean design and smooth user interaction.
 
-## 🚀 Feature
-- Iphone-calculator
+## 🚀 Features
+- Basic math functions
+- Interactive button clicks
+- Real-time display updates
+- Responsive layout
 
 ## 💻 Tech Stack
 - HTML, CSS, JavaScript
