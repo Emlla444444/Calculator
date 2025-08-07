@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="update-calculator.css">
+  </head>
+  <body>
+    <p class="onThePage"></p>
+    <p>
+      <button onclick="
+      updateCalculation(1);
+        " class="btn-design">1</button>
+      <button onclick="
+      updateCalculation(2);
+      " class="btn-design">2</button>
+      <button onclick="
+      updateCalculation(3);
+      " class="btn-design">3</button>
+      <button onclick="
+      updateCalculation(' + ');
+      " class="btn-design-color">+</button>
+    </p>
+    <p>
+      <button onclick="
+      updateCalculation(4);
+        "  class="btn-design">4</button>
+      <button onclick="
+      updateCalculation(5);
+      "  class="btn-design">5</button>
+      <button onclick="
+      updateCalculation(6);
+      "  class="btn-design">6</button>
+      <button onclick="
+      updateCalculation(' - ');
+      "  class="btn-design-color">-</button>
+    </p>
+    <p>
+      <button onclick="
+      updateCalculation(7);
+        "  class="btn-design">7</button>
+      <button onclick="
+      updateCalculation(8);
+      "  class="btn-design">8</button>
+      <button onclick="
+      updateCalculation(9);
+      "  class="btn-design">9</button>
+      <button onclick="
+      updateCalculation(' * ');
+      "  class="btn-design-color">*</button>
+    </p>
+    <p>
+      <button onclick="
+      updateCalculation(0);
+        "  class="btn-design">0</button>
+      <button onclick="
+      updateCalculation('.');
+      "  class="btn-design">.</button>
+      <button onclick="
+      calculation = eval(calculation) ;
+      localStorage.setItem('calculation',calculation);
+      document.querySelector('.onThePage')
+        .innerHTML = calculation;
+      "  class="btn-design">=</button>
+      <button onclick="
+      updateCalculation(' / ');
+      "  class="btn-design-color">/</button>
+    </p>
+    <p>
+      <button onclick="
+      calculation = '';
+      localStorage.setItem('calculation',calculation);
+      document.querySelector('.onThePage')
+        .innerHTML = calculation;
+        "  class="btn-design-clear">Clear</button>
+    </p>
+    <script src="calculation.js"></script>
+  </body>
+</html>
